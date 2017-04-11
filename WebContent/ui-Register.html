@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<TITLE>
+Home
+</TITLE>
+<link rel="stylesheet" type="text/css" href="ui-style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</HEAD>
+<STYLE>
+
+body 
+{
+  background: url(logo.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+</STYLE>
+<BODY>
+
+<header><h1><b>CAR POOLING</b></h1>
+<nav id="mmenu" align="right">
+	<ul >
+		<li><a class="active" href= "ui-Homepage.html" >HOME</a></li>
+		<li><a href= "ui-about.html" >ABOUT</a></li>
+		<li><a href= "ui-Contact-Us.html" >CONTACT US</a></li>
+	</ul>	
+</nav>
+</header>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<table class="white">
+<form name="register" method="post" action="registration.jsp">
+<tr><td colspan="2" align="center"><h2>Registration Form</h2></td></tr>
+
+<tr>
+<td>Name : </td>
+<td><input type="text" name="rn" required> <font color="red">*</font></td>
+</tr>
+
+<tr>
+<td>E-mail : </td>
+<td><input type="email" placeholder="Ex : abc@gmail.com" name="rem" required> <font color="red">*</font></td>
+</tr>
+
+<tr>
+<td>Mobile No. : </td>
+<td><input type="number" name="rmn" min="7000000000" max="9999999999" required> <font color="red">*</font></td>
+</tr>
+
+<tr>
+<label><td>Password : </td>
+<td><input type="password" name="rp" id="rp" required> <font color="red">*</font></td>
+</tr></label>
+
+<tr>
+<label><td>Confirm Password : </td>
+<td><input type="password" name="rcp" id="rcp" required> <font color="red">*</font></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="Register"></td>
+</tr>
+<tr><td colspan="2">Fields with <font color="red">*</font> marks are required.</td></tr>
+ <script type="text/javascript">
+ $('#rcp').on('keyup', function () {
+	    if ($(this).val() == $('#rp').val()) {
+	        $('#rcp').css('border-color', 'lime');
+	    } 
+	    else{
+	        $('#rcp').css('border-color', 'red');
+	    }
+	});
+
+</script>
+
+</form>
+</table>
+
+
+
+</br>
+</br>
+</br>
+<footer>Copyright &copy; RASPYDUKE</footer>
+</BODY>
+</HTML>

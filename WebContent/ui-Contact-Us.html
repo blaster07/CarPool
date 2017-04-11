@@ -1,0 +1,65 @@
+<HTML>
+
+<HEAD>
+<TITLE>
+Contact Us
+</TITLE>
+<link rel="stylesheet" type="text/css" href="ui-style.css">
+
+
+</HEAD>
+
+<STYLE>
+
+body 
+{
+  background: url(logo.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+</STYLE>
+
+
+<BODY>
+
+<header><h1><b>CAR POOLING</b></h1>
+<nav>
+	<ul id="mmenu" align="right">
+		<li><a href= "ui-Homepage.html" >HOME</a></li>
+		<li><a href= "ui-about.html" >ABOUT</a></li>
+		<li><a class="active" href= "ui-Contact-Us.html" >CONTACT US</a></li>
+	</ul>	
+</nav>
+</header>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<table class="white">
+<form method="post" action="message-insertion.jsp">
+<tr><td colspan="2" align="center">
+<h2>Have a question?</h2></td></tr>
+<br/>
+<tr><td>
+Name : </td><td><input type="text" size="29" name="mn" required> <font color="red">*</font></td></tr>
+<br/>
+<tr><td>
+Email : </td><td><input type="email" name="mem" placeholder="Ex : abc@gmail.com" size="29" required> <font color="red">*</font></td></tr>
+<br/>
+<tr><td>
+Message : </td><td><textarea name="mme" rows="5" cols="31" required></textarea> <font color="red">*</font></td></tr>
+<br/>
+<tr><td></td><td>
+<input type="submit" value="Send Message" onclick="myFunction()"></td></tr>
+<br/>
+<tr><td colspan="2">Fields with <font color="red">*</font> marks are required.</td></tr>
+</form>
+</table>
+
+
+<footer>Copyright &copy; RASPYDUKE</footer>
+</BODY>
+</HTML>
