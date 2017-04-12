@@ -29,7 +29,7 @@ function passNM() {
 <% try{
 			String url="jdbc:mysql://localhost:3306/carpooling";
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con= DriverManager.getConnection(url,"root","");
+			Connection con= DriverManager.getConnection(url,"root","raspy");
 			PreparedStatement pstmt=con.prepareStatement("insert into ui_login values(?,?,?,?)");
 			
 			String t1=request.getParameter("rn");

@@ -42,7 +42,7 @@ img {
 <% try{
 			String url="jdbc:mysql://localhost:3306/carpooling";
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con= DriverManager.getConnection(url,"root","");
+			Connection con= DriverManager.getConnection(url,"root","raspy");
 			PreparedStatement pstmt=con.prepareStatement("select * from ui_login");
 			PreparedStatement pstmt1=con.prepareStatement("select * from ui_login where e_mail=?");
 			
@@ -127,7 +127,7 @@ img {
 </br>
 </br>
 <table class="white">
-<form method="post" action="Login.jsp">
+<form method="post" action="ui-login.jsp">
 <tr><td colspan="2" align="center"><h2>Login</h2></td></tr>
 <tr><td>Username : </td><td><input type="text" name="ui_un" required></td></tr>
 <tr><td>Password : </td><td><input type="password" name="ui_pass" required></td></tr>

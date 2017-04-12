@@ -19,7 +19,7 @@
  
             try {
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                conn = DriverManager.getConnection(url, "root","");
+                conn = DriverManager.getConnection(url, "root","raspy");
                 File image = new File("C:/Users/SUBRAT/Desktop/o.jpg");
                 pstmt = conn.prepareStatement("insert into image(firstname, lastname, image, email) " + "values(?,?,?,?)");
                 pstmt.setString(1, "Sumanth");
