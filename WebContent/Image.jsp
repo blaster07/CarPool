@@ -1,4 +1,14 @@
-<!--vishal aaj tujhe is pe kaam krna hai-->
+<!--vishal aaj tujhe is pe kaam krna hai
+CREATE TABLE image (             
+       id int(5) NOT NULL auto_increment,  
+       firstname varchar(25) default NULL,      
+       lastname varchar(20) default NULL,      
+       image blob,                         
+       email varchar(50) default NULL,     
+       PRIMARY KEY  (`id`)                   
+ );
+
+-->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" import="java.util.*,java.io.*,java.sql.*,java.lang.*,javax.servlet.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
